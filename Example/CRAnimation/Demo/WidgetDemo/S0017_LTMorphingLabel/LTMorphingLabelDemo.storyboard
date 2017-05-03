@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3ei-2r-m0A">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LTMorphingLabel Demo-->
+        <scene sceneID="vlG-gG-Crg">
+            <objects>
+                <viewController id="3ei-2r-m0A" customClass="LTDemoViewController" customModule="CRAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zgg-QG-WxN"/>
+                        <viewControllerLayoutGuide type="bottom" id="rVu-wP-OzT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D5d-Wo-IoW">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rE7-Va-JH8">
+                                <rect key="frame" x="20" y="275" width="627" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="fIE-hM-Ab0"/>
+                                    <constraint firstAttribute="height" constant="28" id="vaZ-df-xh8"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Scale"/>
+                                    <segment title="Evaporate"/>
+                                    <segment title="Fall"/>
+                                    <segment title="Pixelate"/>
+                                    <segment title="Sparkle"/>
+                                    <segment title="Burn"/>
+                                    <segment title="Anvil"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="3ei-2r-m0A" eventType="valueChanged" id="rRV-iJ-mWz"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VJ-mH-2Xe">
+                                <rect key="frame" x="20" y="40" width="627" height="215"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.73750000000000004" green="0.0" blue="0.56877266069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeText:" destination="3ei-2r-m0A" eventType="touchUpInside" id="wca-7v-rZP"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ucn-av-UN6">
+                                <rect key="frame" x="20" y="325" width="120" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9pE-1U-E4A"/>
+                                    <constraint firstAttribute="height" constant="28" id="TLk-pB-ubA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Night"/>
+                                    <segment title="Day"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleLight:" destination="3ei-2r-m0A" eventType="valueChanged" id="SHB-V1-FQz"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="26" minValue="9" maxValue="42" translatesAutoresizingMaskIntoConstraints="NO" id="EOd-vo-0jD">
+                                <rect key="frame" x="168" y="323" width="477" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uft-oC-aVu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeFontSize:" destination="3ei-2r-m0A" eventType="valueChanged" id="RPG-Ij-VXw"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm LTMorphingLabel. Tap Me Please." textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqc-dc-WVn" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="20" y="40" width="627" height="215"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.73750000000000004" green="0.0" blue="0.56877266069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EOd-vo-0jD" firstAttribute="top" secondItem="rE7-Va-JH8" secondAttribute="bottom" constant="20" id="7ro-9X-VKm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EOd-vo-0jD" secondAttribute="trailing" constant="4" id="DrY-mw-8sU"/>
+                            <constraint firstItem="fqc-dc-WVn" firstAttribute="leading" secondItem="D5d-Wo-IoW" secondAttribute="leadingMargin" id="FRI-HA-iwA"/>
+                            <constraint firstItem="rE7-Va-JH8" firstAttribute="top" secondItem="3VJ-mH-2Xe" secondAttribute="bottom" constant="20" id="FbJ-XZ-R2b"/>
+                            <constraint firstItem="fqc-dc-WVn" firstAttribute="top" secondItem="zgg-QG-WxN" secondAttribute="bottom" constant="20" id="JLl-ED-669"/>
+                            <constraint firstItem="EOd-vo-0jD" firstAttribute="leading" secondItem="Ucn-av-UN6" secondAttribute="trailing" constant="30" id="TpR-XE-wc6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rE7-Va-JH8" secondAttribute="trailing" id="URl-uL-VkH"/>
+                            <constraint firstItem="rE7-Va-JH8" firstAttribute="leading" secondItem="D5d-Wo-IoW" secondAttribute="leadingMargin" id="Uv1-gH-Yw5"/>
+                            <constraint firstItem="Ucn-av-UN6" firstAttribute="leading" secondItem="D5d-Wo-IoW" secondAttribute="leadingMargin" id="ato-cL-hIr"/>
+                            <constraint firstItem="3VJ-mH-2Xe" firstAttribute="leading" secondItem="D5d-Wo-IoW" secondAttribute="leadingMargin" id="d9f-iq-G1D"/>
+                            <constraint firstItem="3VJ-mH-2Xe" firstAttribute="top" secondItem="zgg-QG-WxN" secondAttribute="bottom" constant="20" id="ev9-ly-VWf"/>
+                            <constraint firstItem="rVu-wP-OzT" firstAttribute="top" secondItem="Ucn-av-UN6" secondAttribute="bottom" constant="22" id="fFq-dK-A0i"/>
+                            <constraint firstItem="rVu-wP-OzT" firstAttribute="top" secondItem="EOd-vo-0jD" secondAttribute="bottom" constant="22" id="grd-XJ-WqJ"/>
+                            <constraint firstItem="fqc-dc-WVn" firstAttribute="trailing" secondItem="D5d-Wo-IoW" secondAttribute="trailingMargin" id="izu-ll-ljE"/>
+                            <constraint firstItem="rE7-Va-JH8" firstAttribute="top" secondItem="fqc-dc-WVn" secondAttribute="bottom" constant="20" id="k9Z-OZ-VrU"/>
+                            <constraint firstItem="3VJ-mH-2Xe" firstAttribute="trailing" secondItem="D5d-Wo-IoW" secondAttribute="trailingMargin" id="o8d-0t-cq2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LTMorphingLabel Demo" id="A7j-8h-CTu"/>
+                    <connections>
+                        <outlet property="label" destination="fqc-dc-WVn" id="2De-iO-BGH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOt-ne-B2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="263"/>
+        </scene>
+    </scenes>
+</document>
