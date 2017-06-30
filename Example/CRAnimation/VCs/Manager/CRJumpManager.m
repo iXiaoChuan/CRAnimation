@@ -74,16 +74,52 @@
         //  正常VC
         else{
             id idVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
-            if ([idVC isKindOfClass:[CRProductionBaseVC class]]) {
+            if ([idVC isKindOfClass:[CRProductionBaseVC class]] && demoInfoModel.developStatus == kCRDevelopStatus_Developed) {
                 CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)idVC;
                 [destinationVC setDemoInfoModel:demoInfoModel];
                 [_inVC.navigationController pushViewController:destinationVC animated:YES];
             }else{
-                [self needUpdateAppAlertView];
+                
+                if (demoInfoModel.developStatus == kCRDevelopStatus_Developing) {
+                    [self developingNoticeAlertView];
+                }else{
+                    [self needUpdateAppAlertView];
+                }
             }
         }
     }
 }
+
+- (void)developingNoticeAlertView
+{
+    __block BearAlertView *bearAlert = [[BearAlertView alloc] init];
+    
+    bearAlert.normalAlertContentView.titleLabel.text = @"提示";
+    bearAlert.normalAlertContentView.titleLabel.textColor = color_ffffff;
+    bearAlert.normalAlertContentView.contentLabel.text = @"该动效正在开发中～\n尽请期待!";
+    bearAlert.normalAlertContentView.contentLabel.textAlignment = NSTextAlignmentCenter;
+    bearAlert.normalAlertContentView.contentLabel.textColor = color_ffffff;
+    bearAlert.normalAlertContentView.backgroundColor = color_Master;
+    
+    [bearAlert.normalAlertBtnsView setNormal_CancelBtnTitle:nil ConfirmBtnTitle:@"朕知道了！"];
+    [bearAlert.normalAlertBtnsView.confirmBtn setTitleColor:color_ffffff forState:UIControlStateNormal];
+    [bearAlert.normalAlertBtnsView.cancelBtn setTitleColor:color_ffffff forState:UIControlStateNormal];
+    bearAlert.normalAlertBtnsView.backgroundColor = color_Master;
+    
+    [bearAlert alertView_ConfirmClickBlock:^{
+        nil;
+    } CancelClickBlock:^{
+        NSLog(@"--cancel");
+    }];
+    bearAlert.animationClose_FinishBlock = ^(){
+        NSLog(@"--closeAniamtion finish");
+        bearAlert = nil;
+    };
+    
+    CRAppDelegate *myDelegate = (CRAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [myDelegate.window addSubview:bearAlert];
+}
+
 
 - (void)needUpdateAppAlertView
 {
