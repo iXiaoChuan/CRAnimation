@@ -53,7 +53,7 @@ typedef NS_ENUM(NSInteger, GradientColorsType) {
     
     [self initPara];
     [self createUI];
-    [self addTopBarWithTitle:@"RQShineLabel"];
+    [self addTopBarWithTitle:@""];
 }
 
 - (void)initPara
@@ -98,7 +98,7 @@ typedef NS_ENUM(NSInteger, GradientColorsType) {
     [self.view addSubview:_customNaviBarView];
     
     UILabel *titlLabel = [UILabel new];
-//    titlLabel.text = @"App Settings";
+    titlLabel.text = @"App Settings";
     titlLabel.textColor = UIColorFromHEX(0x919191);
     [_customNaviBarView addSubview:titlLabel];
     [titlLabel sizeToFit];

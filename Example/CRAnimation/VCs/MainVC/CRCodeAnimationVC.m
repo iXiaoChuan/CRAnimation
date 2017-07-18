@@ -102,6 +102,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
                                                               ]];
     
     _storageDemoInfoModelNameArray = @[
+                                       @"CRCircleKnobDemoInfoModel",
                                        @"CRNumberFadedDemoInfoModel",
                                        @"CRRefreshDemoInfoModel",
                                        @"LTMoriphingLabelDemoInfoModel",

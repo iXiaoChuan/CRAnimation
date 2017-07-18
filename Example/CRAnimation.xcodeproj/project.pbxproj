@@ -114,6 +114,13 @@
 		09ECE3AC1F1E6FF800A2D79E /* CRSliderIndicatorChip.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A51F1E6FF800A2D79E /* CRSliderIndicatorChip.m */; };
 		09ECE3AD1F1E6FF800A2D79E /* CRNumberFadedDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A71F1E6FF800A2D79E /* CRNumberFadedDemoVC.m */; };
 		09ECE3AF1F1E751D00A2D79E /* S0019_CRNumberFaded.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */; };
+		09ECE3BB1F1E767800A2D79E /* CircleKnobDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3B21F1E767800A2D79E /* CircleKnobDemoVC.m */; };
+		09ECE3BC1F1E767800A2D79E /* FanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3B41F1E767800A2D79E /* FanView.m */; };
+		09ECE3BD1F1E767800A2D79E /* ViewWithAutoShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3B61F1E767800A2D79E /* ViewWithAutoShadow.m */; };
+		09ECE3BE1F1E767800A2D79E /* LineViewWithVerticalAssist.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3B81F1E767800A2D79E /* LineViewWithVerticalAssist.m */; };
+		09ECE3BF1F1E767800A2D79E /* LineMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3BA1F1E767800A2D79E /* LineMath.m */; };
+		09ECE3C21F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3C11F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m */; };
+		09ECE3C61F1E778400A2D79E /* UIView+KnobSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3C51F1E778400A2D79E /* UIView+KnobSet.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		09EF43201EABA96F00825254 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EF431F1EABA96F00825254 /* README.md */; };
@@ -356,6 +363,20 @@
 		09ECE3A61F1E6FF800A2D79E /* CRNumberFadedDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNumberFadedDemoVC.h; sourceTree = "<group>"; };
 		09ECE3A71F1E6FF800A2D79E /* CRNumberFadedDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNumberFadedDemoVC.m; sourceTree = "<group>"; };
 		09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0019_CRNumberFaded.gif; sourceTree = "<group>"; };
+		09ECE3B11F1E767800A2D79E /* CircleKnobDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleKnobDemoVC.h; sourceTree = "<group>"; };
+		09ECE3B21F1E767800A2D79E /* CircleKnobDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleKnobDemoVC.m; sourceTree = "<group>"; };
+		09ECE3B31F1E767800A2D79E /* FanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanView.h; sourceTree = "<group>"; };
+		09ECE3B41F1E767800A2D79E /* FanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanView.m; sourceTree = "<group>"; };
+		09ECE3B51F1E767800A2D79E /* ViewWithAutoShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewWithAutoShadow.h; sourceTree = "<group>"; };
+		09ECE3B61F1E767800A2D79E /* ViewWithAutoShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewWithAutoShadow.m; sourceTree = "<group>"; };
+		09ECE3B71F1E767800A2D79E /* LineViewWithVerticalAssist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineViewWithVerticalAssist.h; sourceTree = "<group>"; };
+		09ECE3B81F1E767800A2D79E /* LineViewWithVerticalAssist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineViewWithVerticalAssist.m; sourceTree = "<group>"; };
+		09ECE3B91F1E767800A2D79E /* LineMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineMath.h; sourceTree = "<group>"; };
+		09ECE3BA1F1E767800A2D79E /* LineMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineMath.m; sourceTree = "<group>"; };
+		09ECE3C01F1E769700A2D79E /* CRCircleKnobDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCircleKnobDemoInfoModel.h; sourceTree = "<group>"; };
+		09ECE3C11F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCircleKnobDemoInfoModel.m; sourceTree = "<group>"; };
+		09ECE3C41F1E778400A2D79E /* UIView+KnobSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KnobSet.h"; sourceTree = "<group>"; };
+		09ECE3C51F1E778400A2D79E /* UIView+KnobSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KnobSet.m"; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0013_FoldingTabBar.gif; sourceTree = "<group>"; };
@@ -658,6 +679,7 @@
 				97218BAF1EB24E4E0002F4E7 /* S0017_LTMorphingLabel */,
 				977889261EB246C300F163D2 /* S0018_CRRefresh */,
 				09ECE36E1F1E687A00A2D79E /* S0019_CRNumberFaded */,
+				09ECE3B01F1E766000A2D79E /* S0020_CircleKnob */,
 			);
 			path = WidgetDemo;
 			sourceTree = "<group>";
@@ -928,6 +950,27 @@
 				09ECE3A51F1E6FF800A2D79E /* CRSliderIndicatorChip.m */,
 			);
 			path = CRSlider;
+			sourceTree = "<group>";
+		};
+		09ECE3B01F1E766000A2D79E /* S0020_CircleKnob */ = {
+			isa = PBXGroup;
+			children = (
+				09ECE3C01F1E769700A2D79E /* CRCircleKnobDemoInfoModel.h */,
+				09ECE3C11F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m */,
+				09ECE3B11F1E767800A2D79E /* CircleKnobDemoVC.h */,
+				09ECE3B21F1E767800A2D79E /* CircleKnobDemoVC.m */,
+				09ECE3B31F1E767800A2D79E /* FanView.h */,
+				09ECE3B41F1E767800A2D79E /* FanView.m */,
+				09ECE3B51F1E767800A2D79E /* ViewWithAutoShadow.h */,
+				09ECE3B61F1E767800A2D79E /* ViewWithAutoShadow.m */,
+				09ECE3B71F1E767800A2D79E /* LineViewWithVerticalAssist.h */,
+				09ECE3B81F1E767800A2D79E /* LineViewWithVerticalAssist.m */,
+				09ECE3B91F1E767800A2D79E /* LineMath.h */,
+				09ECE3BA1F1E767800A2D79E /* LineMath.m */,
+				09ECE3C41F1E778400A2D79E /* UIView+KnobSet.h */,
+				09ECE3C51F1E778400A2D79E /* UIView+KnobSet.m */,
+			);
+			path = S0020_CircleKnob;
 			sourceTree = "<group>";
 		};
 		09EF431E1EABA91800825254 /* S0014_PullToRefreshRentals */ = {
@@ -1552,6 +1595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09ECE3BB1F1E767800A2D79E /* CircleKnobDemoVC.m in Sources */,
 				092A2D4D1DBCA54C00650DE1 /* CRMusicCardDemoVC.m in Sources */,
 				ED36EAD21DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m in Sources */,
 				09B519E51E73CE4500065C27 /* CRJHUDDemoInfoModel.m in Sources */,
@@ -1584,15 +1628,18 @@
 				977889361EB246C300F163D2 /* CRRefreshVC.swift in Sources */,
 				090080A71E4CB9AE00AE60A5 /* CRMembersVC.m in Sources */,
 				092A2D651DBCA8DA00650DE1 /* README.md in Sources */,
+				09ECE3BC1F1E767800A2D79E /* FanView.m in Sources */,
 				09203ACE1E4F460D00FB2B25 /* CRCustomNaviBarView.m in Sources */,
 				092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */,
 				0905B9631EAFA1B0003FAA5D /* NVActivityIndicatorViewDemoVC.swift in Sources */,
 				9704F1E81E7432DC00604DFC /* README.md in Sources */,
+				09ECE3BE1F1E767800A2D79E /* LineViewWithVerticalAssist.m in Sources */,
 				092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */,
 				092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */,
 				262A75A91E8CE77600E8D9D6 /* README.md in Sources */,
 				0920032D1DAAA1A6008266B8 /* CRDemoInfoModel.m in Sources */,
 				09449E681E631CE70008BD8F /* CRBaseViewController.m in Sources */,
+				09ECE3C21F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m in Sources */,
 				09FAC1F91EA7CB220064D100 /* README.md in Sources */,
 				09B519EB1E73CF8200065C27 /* DetailViewController.m in Sources */,
 				09109A831E5351B300031210 /* CRFLAnimatiatedImageView.m in Sources */,
@@ -1629,6 +1676,7 @@
 				9704F1DC1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift in Sources */,
 				092A2D481DBCA54C00650DE1 /* CRBottomPageView.m in Sources */,
 				092A2D4A1DBCA54C00650DE1 /* CRCardViewFront.m in Sources */,
+				09ECE3C61F1E778400A2D79E /* UIView+KnobSet.m in Sources */,
 				3734D3991E97614D0022D537 /* ZJCWaveTabarController.m in Sources */,
 				0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */,
 				0905B9421EAE4709003FAA5D /* RQShineLabelDemoInfoModel.m in Sources */,
@@ -1651,6 +1699,7 @@
 				09B519E81E73CE5D00065C27 /* CRJHUDDemoVC.m in Sources */,
 				ED36EAD51DD2AF9B0050416B /* README.md in Sources */,
 				527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */,
+				09ECE3BD1F1E767800A2D79E /* ViewWithAutoShadow.m in Sources */,
 				09B519E21E73CE0D00065C27 /* README.md in Sources */,
 				09109A7D1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m in Sources */,
 				9704F1F11E7442C000604DFC /* CRRollerCoasterLayerModel.m in Sources */,
@@ -1677,6 +1726,7 @@
 				0900808C1E4CAD6800AE60A5 /* CRProductionShowDetailManager.m in Sources */,
 				092A2D321DBCA51C00650DE1 /* GifDemoVC.m in Sources */,
 				09EF43261EABA9A600825254 /* PullToRefreshRentalsDemoVC.m in Sources */,
+				09ECE3BF1F1E767800A2D79E /* LineMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
