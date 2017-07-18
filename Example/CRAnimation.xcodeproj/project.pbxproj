@@ -112,7 +112,8 @@
 		09ECE3AA1F1E6FF800A2D79E /* CRNumberSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A11F1E6FF800A2D79E /* CRNumberSlider.m */; };
 		09ECE3AB1F1E6FF800A2D79E /* CRSliderIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A31F1E6FF800A2D79E /* CRSliderIndicator.m */; };
 		09ECE3AC1F1E6FF800A2D79E /* CRSliderIndicatorChip.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A51F1E6FF800A2D79E /* CRSliderIndicatorChip.m */; };
-		09ECE3AD1F1E6FF800A2D79E /* PerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A71F1E6FF800A2D79E /* PerformanceVC.m */; };
+		09ECE3AD1F1E6FF800A2D79E /* CRNumberFadedDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3A71F1E6FF800A2D79E /* CRNumberFadedDemoVC.m */; };
+		09ECE3AF1F1E751D00A2D79E /* S0019_CRNumberFaded.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		09EF43201EABA96F00825254 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EF431F1EABA96F00825254 /* README.md */; };
@@ -352,8 +353,9 @@
 		09ECE3A31F1E6FF800A2D79E /* CRSliderIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSliderIndicator.m; sourceTree = "<group>"; };
 		09ECE3A41F1E6FF800A2D79E /* CRSliderIndicatorChip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSliderIndicatorChip.h; sourceTree = "<group>"; };
 		09ECE3A51F1E6FF800A2D79E /* CRSliderIndicatorChip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSliderIndicatorChip.m; sourceTree = "<group>"; };
-		09ECE3A61F1E6FF800A2D79E /* PerformanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceVC.h; sourceTree = "<group>"; };
-		09ECE3A71F1E6FF800A2D79E /* PerformanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceVC.m; sourceTree = "<group>"; };
+		09ECE3A61F1E6FF800A2D79E /* CRNumberFadedDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNumberFadedDemoVC.h; sourceTree = "<group>"; };
+		09ECE3A71F1E6FF800A2D79E /* CRNumberFadedDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNumberFadedDemoVC.m; sourceTree = "<group>"; };
+		09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0019_CRNumberFaded.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0013_FoldingTabBar.gif; sourceTree = "<group>"; };
@@ -896,10 +898,10 @@
 			children = (
 				09ECE3831F1E6AAE00A2D79E /* CRNumberFadedDemoInfoModel.h */,
 				09ECE3841F1E6AAE00A2D79E /* CRNumberFadedDemoInfoModel.m */,
+				09ECE3A61F1E6FF800A2D79E /* CRNumberFadedDemoVC.h */,
+				09ECE3A71F1E6FF800A2D79E /* CRNumberFadedDemoVC.m */,
 				09ECE39A1F1E6FF800A2D79E /* CRNumberFaded */,
 				09ECE39F1F1E6FF800A2D79E /* CRSlider */,
-				09ECE3A61F1E6FF800A2D79E /* PerformanceVC.h */,
-				09ECE3A71F1E6FF800A2D79E /* PerformanceVC.m */,
 			);
 			path = S0019_CRNumberFaded;
 			sourceTree = "<group>";
@@ -965,6 +967,7 @@
 				0905B9641EAFA6BB003FAA5D /* S0016_NVActivityIndicatorView_20170425.gif */,
 				09362BE21EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif */,
 				977889241EB2339E00F163D2 /* S0018_CRRefresh.gif */,
+				09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */,
 			);
 			path = DemoGifs;
 			sourceTree = "<group>";
@@ -1326,6 +1329,7 @@
 				0905B93A1EAD0356003FAA5D /* YALSunnyRefreshControl.xib in Resources */,
 				09ECE3691F1E66BB00A2D79E /* S0014_PullToRefreshRentals.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				09ECE3AF1F1E751D00A2D79E /* S0019_CRNumberFaded.gif in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
 				09ECE3641F1E66BB00A2D79E /* S0009_WCLShineButton_20170322.gif in Resources */,
 				09ECE3621F1E66BB00A2D79E /* S0007_CRGatling_20170309.gif in Resources */,
@@ -1658,7 +1662,7 @@
 				9704F1F31E7442C000604DFC /* README.md in Sources */,
 				09D168D81DC620210082C35E /* README.md in Sources */,
 				092A2D311DBCA51C00650DE1 /* GifDemoInfoModel.m in Sources */,
-				09ECE3AD1F1E6FF800A2D79E /* PerformanceVC.m in Sources */,
+				09ECE3AD1F1E6FF800A2D79E /* CRNumberFadedDemoVC.m in Sources */,
 				09449E811E6476C40008BD8F /* CRHomeProductsModel.m in Sources */,
 				97218BB81EB24E4E0002F4E7 /* LTDemoViewController.swift in Sources */,
 				0900808B1E4CAD6800AE60A5 /* CRProductionDetailView.m in Sources */,

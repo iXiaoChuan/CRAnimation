@@ -12,8 +12,8 @@
 
 - (void)fillDemoInfo
 {
-    self.demoVCName     = @"PerformanceVC";
-    self.demoGifName    = @"S0001_CRCardAnimation_20170322.gif";
+    self.demoVCName     = @"CRNumberFadedDemoVC";
+    self.demoGifName    = @"S0019_CRNumberFaded.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0019";
     self.demoName       = @"CRNumberFaded";

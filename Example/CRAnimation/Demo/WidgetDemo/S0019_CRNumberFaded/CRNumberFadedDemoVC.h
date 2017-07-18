@@ -1,5 +1,5 @@
 //
-//  PerformanceVC.h
+//  CRNumberFadedDemoVC.h
 //  CRNumberFaded
 //
 //  Created by Bear on 2017/5/12.
@@ -8,6 +8,6 @@
 
 #import "CRProductionBaseVC.h"
 
-@interface PerformanceVC : CRProductionBaseVC
+@interface CRNumberFadedDemoVC : CRProductionBaseVC
 
 @end

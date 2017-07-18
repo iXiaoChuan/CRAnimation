@@ -1,12 +1,12 @@
 //
-//  PerformanceVC.m
+//  CRNumberFadedDemoVC.m
 //  CRNumberFaded
 //
 //  Created by Bear on 2017/5/12.
 //  Copyright © 2017年 Bear. All rights reserved.
 //
 
-#import "PerformanceVC.h"
+#import "CRNumberFadedDemoVC.h"
 #import "CRNumberFaded.h"
 #import "CRNumberSlider.h"
 #import "CRSliderIndicator.h"
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, GradientColorsType) {
     GradientColorsType3,
 };
 
-@interface PerformanceVC () <CRNumberSliderDelegate, CRNumberFadedDelegate>
+@interface CRNumberFadedDemoVC () <CRNumberSliderDelegate, CRNumberFadedDelegate>
 {
     UIView *_customNaviBarView;
     CRNumberFaded *_numberFadedView;
@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, GradientColorsType) {
 
 @end
 
-@implementation PerformanceVC
+@implementation CRNumberFadedDemoVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
