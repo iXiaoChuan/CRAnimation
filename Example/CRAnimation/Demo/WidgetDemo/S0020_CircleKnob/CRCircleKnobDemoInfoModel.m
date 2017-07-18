@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"CircleKnobDemoVC";
-    self.demoGifName    = @"S0019_CRNumberFaded.gif";
+    self.demoGifName    = @"S0020_CircleKnob.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0019";
     self.demoName       = @"CRNumberFaded";

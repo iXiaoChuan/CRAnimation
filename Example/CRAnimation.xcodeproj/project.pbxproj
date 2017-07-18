@@ -121,6 +121,7 @@
 		09ECE3BF1F1E767800A2D79E /* LineMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3BA1F1E767800A2D79E /* LineMath.m */; };
 		09ECE3C21F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3C11F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m */; };
 		09ECE3C61F1E778400A2D79E /* UIView+KnobSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE3C51F1E778400A2D79E /* UIView+KnobSet.m */; };
+		09ECE3C81F1E7AC200A2D79E /* S0020_CircleKnob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09ECE3C71F1E7AC100A2D79E /* S0020_CircleKnob.gif */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		09EF43201EABA96F00825254 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EF431F1EABA96F00825254 /* README.md */; };
@@ -377,6 +378,7 @@
 		09ECE3C11F1E769700A2D79E /* CRCircleKnobDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCircleKnobDemoInfoModel.m; sourceTree = "<group>"; };
 		09ECE3C41F1E778400A2D79E /* UIView+KnobSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KnobSet.h"; sourceTree = "<group>"; };
 		09ECE3C51F1E778400A2D79E /* UIView+KnobSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KnobSet.m"; sourceTree = "<group>"; };
+		09ECE3C71F1E7AC100A2D79E /* S0020_CircleKnob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0020_CircleKnob.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0013_FoldingTabBar.gif; sourceTree = "<group>"; };
@@ -1011,6 +1013,7 @@
 				09362BE21EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif */,
 				977889241EB2339E00F163D2 /* S0018_CRRefresh.gif */,
 				09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */,
+				09ECE3C71F1E7AC100A2D79E /* S0020_CircleKnob.gif */,
 			);
 			path = DemoGifs;
 			sourceTree = "<group>";
@@ -1361,6 +1364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09ECE3C81F1E7AC200A2D79E /* S0020_CircleKnob.gif in Resources */,
 				09ECE3671F1E66BB00A2D79E /* S0012_HJWWaterWave.gif in Resources */,
 				3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */,
 				09ECE3651F1E66BB00A2D79E /* S0010_RollerCoasterLayer_20170312.gif in Resources */,
