@@ -138,6 +138,7 @@
 		09ECE5301F1EDE7200A2D79E /* StartBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE5201F1EDE7200A2D79E /* StartBtn.m */; };
 		09ECE5311F1EDE7200A2D79E /* UIView+SetSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE5221F1EDE7200A2D79E /* UIView+SetSize.m */; };
 		09ECE5341F1EDEBA00A2D79E /* FlowMenuDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ECE5331F1EDEBA00A2D79E /* FlowMenuDefines.m */; };
+		09ECE5361F1EE2A500A2D79E /* S0021_FlowMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09ECE5351F1EE2A500A2D79E /* S0021_FlowMenu.gif */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		09EF43201EABA96F00825254 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EF431F1EABA96F00825254 /* README.md */; };
@@ -427,6 +428,7 @@
 		09ECE5221F1EDE7200A2D79E /* UIView+SetSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetSize.m"; sourceTree = "<group>"; };
 		09ECE5321F1EDEBA00A2D79E /* FlowMenuDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowMenuDefines.h; sourceTree = "<group>"; };
 		09ECE5331F1EDEBA00A2D79E /* FlowMenuDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowMenuDefines.m; sourceTree = "<group>"; };
+		09ECE5351F1EE2A500A2D79E /* S0021_FlowMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0021_FlowMenu.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0013_FoldingTabBar.gif; sourceTree = "<group>"; };
@@ -1102,6 +1104,7 @@
 				977889241EB2339E00F163D2 /* S0018_CRRefresh.gif */,
 				09ECE3AE1F1E751D00A2D79E /* S0019_CRNumberFaded.gif */,
 				09ECE3C71F1E7AC100A2D79E /* S0020_CircleKnob.gif */,
+				09ECE5351F1EE2A500A2D79E /* S0021_FlowMenu.gif */,
 			);
 			path = DemoGifs;
 			sourceTree = "<group>";
@@ -1471,6 +1474,7 @@
 				09ECE35F1F1E66BB00A2D79E /* S0004_WCLLoadingView_20170420.gif in Resources */,
 				09ECE36C1F1E66BB00A2D79E /* S0017_LTMoriphingLabel_20170503.gif in Resources */,
 				977889321EB246C300F163D2 /* CRRefreshNormalCellTableViewCell.xib in Resources */,
+				09ECE5361F1EE2A500A2D79E /* S0021_FlowMenu.gif in Resources */,
 				09ECE3601F1E66BB00A2D79E /* S0005_HZLaunchView_20170322.gif in Resources */,
 				09ECE35B1F1E66BB00A2D79E /* C0001_CRMusicCardDemoVC.gif in Resources */,
 				09ECE36A1F1E66BB00A2D79E /* S0015_RQShineLabel_20170424.gif in Resources */,
