@@ -1,24 +1,24 @@
 //
-//  CRCircleKnobDemoInfoModel.m
+//  CRFlowMenuDemoInfoModel.m
 //  CRAnimation
 //
 //  Created by Bear on 2017/7/19.
 //  Copyright © 2017年 BearRan. All rights reserved.
 //
 
-#import "CRCircleKnobDemoInfoModel.h"
+#import "CRFlowMenuDemoInfoModel.h"
 
-@implementation CRCircleKnobDemoInfoModel
+@implementation CRFlowMenuDemoInfoModel
 
 - (void)fillDemoInfo
 {
-    self.demoVCName     = @"CircleKnobDemoVC";
+    self.demoVCName     = @"FlowMenuDemoVC";
     self.demoGifName    = @"S0020_CircleKnob.gif";
     self.demoType       = kCRDemoTypeStorage;
-    self.CRID           = @"S0020";
+    self.CRID           = @"S0021";
     self.demoName       = @"CRNumberFaded";
-    self.demoSummary    = @"旋钮动效";
-    self.detailDesc     = @"这是一个旋钮动画效果";
+    self.demoSummary    = @"滚珠菜单动效";
+    self.detailDesc     = @"这是一个滚珠菜单动画效果";
     self.codeLanguage   = kCRLanguageTypeObjectiveC;
     self.developStatus  = kCRDevelopStatus_Developed;
     
