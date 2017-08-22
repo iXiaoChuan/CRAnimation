@@ -11,6 +11,8 @@
 #import "CRDemoInfoModel.h"
 #import "CRProductionBaseVC.h"
 #import "CRDesignProductionBaseVC.h"
+#import <BearSkill/BearAlertView.h>
+#import "CRAppDelegate.h"
 
 @interface CRJumpManager ()
 {
@@ -61,23 +63,93 @@
             if (!storyBoard) {
                 return;
             }
-            UIViewController *vc = [storyBoard instantiateInitialViewController];
-            if (!vc) {
+            CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)[storyBoard instantiateInitialViewController];
+            if (!destinationVC) {
                 return;
             }
-            [_inVC.navigationController pushViewController:vc animated:YES];
+            [destinationVC setDemoInfoModel:demoInfoModel];
+            [_inVC.navigationController pushViewController:destinationVC animated:YES];
             
         }
         //  正常VC
         else{
             id idVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
-            if ([idVC isKindOfClass:[CRProductionBaseVC class]]) {
+            if ([idVC isKindOfClass:[CRProductionBaseVC class]] && demoInfoModel.developStatus == kCRDevelopStatus_Developed) {
                 CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)idVC;
                 [destinationVC setDemoInfoModel:demoInfoModel];
                 [_inVC.navigationController pushViewController:destinationVC animated:YES];
+            }else{
+                
+                if (demoInfoModel.developStatus == kCRDevelopStatus_Developing) {
+                    [self developingNoticeAlertView];
+                }else{
+                    [self needUpdateAppAlertView];
+                }
             }
         }
     }
+}
+
+- (void)developingNoticeAlertView
+{
+    __block BearAlertView *bearAlert = [[BearAlertView alloc] init];
+    
+    bearAlert.normalAlertContentView.titleLabel.text = @"提示";
+    bearAlert.normalAlertContentView.titleLabel.textColor = color_ffffff;
+    bearAlert.normalAlertContentView.contentLabel.text = @"该动效正在开发中～\n尽请期待!";
+    bearAlert.normalAlertContentView.contentLabel.textAlignment = NSTextAlignmentCenter;
+    bearAlert.normalAlertContentView.contentLabel.textColor = color_ffffff;
+    bearAlert.normalAlertContentView.backgroundColor = color_Master;
+    
+    [bearAlert.normalAlertBtnsView setNormal_CancelBtnTitle:nil ConfirmBtnTitle:@"朕知道了！"];
+    [bearAlert.normalAlertBtnsView.confirmBtn setTitleColor:color_ffffff forState:UIControlStateNormal];
+    [bearAlert.normalAlertBtnsView.cancelBtn setTitleColor:color_ffffff forState:UIControlStateNormal];
+    bearAlert.normalAlertBtnsView.backgroundColor = color_Master;
+    
+    [bearAlert alertView_ConfirmClickBlock:^{
+        nil;
+    } CancelClickBlock:^{
+        NSLog(@"--cancel");
+    }];
+    bearAlert.animationClose_FinishBlock = ^(){
+        NSLog(@"--closeAniamtion finish");
+        bearAlert = nil;
+    };
+    
+    CRAppDelegate *myDelegate = (CRAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [myDelegate.window addSubview:bearAlert];
+}
+
+
+- (void)needUpdateAppAlertView
+{
+    __block BearAlertView *bearAlert = [[BearAlertView alloc] init];
+    
+    bearAlert.normalAlertContentView.titleLabel.text = @"最高机密";
+    bearAlert.normalAlertContentView.titleLabel.textColor = color_ffffff;
+    bearAlert.normalAlertContentView.contentLabel.text = @"（＞﹏＜） Sorry～\n当前版本不支持体验该动效，请更新至最新版本！";
+    bearAlert.normalAlertContentView.contentLabel.textAlignment = NSTextAlignmentCenter;
+    bearAlert.normalAlertContentView.contentLabel.textColor = color_ffffff;
+    bearAlert.normalAlertContentView.backgroundColor = color_Master;
+    
+    [bearAlert.normalAlertBtnsView setNormal_CancelBtnTitle:@"等几年再更新" ConfirmBtnTitle:@"朕立马去更新！"];
+    [bearAlert.normalAlertBtnsView.confirmBtn setTitleColor:color_ffffff forState:UIControlStateNormal];
+    [bearAlert.normalAlertBtnsView.cancelBtn setTitleColor:color_ffffff forState:UIControlStateNormal];
+    bearAlert.normalAlertBtnsView.backgroundColor = color_Master;
+    
+    [bearAlert alertView_ConfirmClickBlock:^{
+        NSString *appStoreAddress = @"https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8";
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appStoreAddress]];
+    } CancelClickBlock:^{
+        NSLog(@"--cancel");
+    }];
+    bearAlert.animationClose_FinishBlock = ^(){
+        NSLog(@"--closeAniamtion finish");
+        bearAlert = nil;
+    };
+    
+    CRAppDelegate *myDelegate = (CRAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [myDelegate.window addSubview:bearAlert];
 }
 
 #pragma mark - Analysis

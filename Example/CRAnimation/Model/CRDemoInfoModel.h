@@ -21,6 +21,11 @@ typedef enum {
     kCRLanguageTypeSwift      = 2,  //  Swift
 } CRLanguage;
 
+typedef enum {
+    kCRDevelopStatus_Developed = 0,   //  开发完成
+    kCRDevelopStatus_Developing = 1,  //  开发中
+}kCRDevelopStatus;
+
 @interface CRDemoInfoModel : NSObject
 
 //  Require
@@ -38,6 +43,9 @@ typedef enum {
 //  kCRDemoTypeCombination:     组合动效
 //  kCRDemoTypeDesigner:        设计师动效
 @property (assign, nonatomic) CRDemoType    demoType;
+
+//  开发状态:0已发布；1，开发中
+@property (assign, nonatomic) kCRDevelopStatus  developStatus;
 
 //  Require
 //  ID编号（向管理员申请）
@@ -83,6 +91,8 @@ typedef enum {
 //  Gif地址
 @property (strong, nonatomic) NSString      *gifAddress;
 
+@property (strong, nonatomic) NSString      *imageSize;
+
 //  数据库用id
 @property (strong, nonatomic) NSNumber  *animationId;
 
@@ -90,5 +100,7 @@ typedef enum {
 @property (strong, nonatomic) NSArray <CRProductsMemberBriefInfoModel *> *designAuthors;
 
 - (void)fillDemoInfo;
+
++ (CGSize)caculateImageSize:(NSString *)imageSizeStr;
 
 @end

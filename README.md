@@ -19,6 +19,8 @@ CR\_AppleStore:<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4
 <!--### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
  <img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>-->
 
+# 由于App的接口服务器出现异常，现在正在处理中。请大家耐心等待^_^
+
 ---
 ### 项目简介
 CRAnimation是一个关于iOS动效集成的开源项目.CRAnimation团队由一群极富激情的小伙伴组成,目标就是搭建业内最大的有情调的动效提供平台,通过化零为整地整理和收集各种动效,并完成代码构建或者优化既有源码,以期达到初级开发者即可零成本快速集成所需动效的目的.CRAnimation将通过丰富的形式给各领域的开发者提供便捷的服务,为Designers提供酷炫的"动效蓝本",为Newer Coders提供傻瓜式的"模块化动效",为Advanced Developers提供可深度研习和定制的"动效源码".
@@ -33,8 +35,8 @@ CRAnimation团队再次对小伙伴儿们的使用和支持表示诚挚的感谢
 
 ---
 
+<!--
 ### 如何使用
-
 * 下载项目源码,通过源码查看项目提供的功能和项目中包含的动效Demo.
 * 利用Cocopods方便地集成,在您的PodFile中加入
 ```
@@ -45,8 +47,8 @@ pod 'CRAnimation', '~> 0.1.3'
 $ pod install
 ```
 即可在项目中集成使用CRAnimation的各种酷炫动效了.
-
 ---
+-->
 
 ### 动效示例
 
@@ -67,6 +69,8 @@ $ pod install
 | S0014 <br> [PullToRefreshRentals](Example/CRAnimation/Demo/WidgetDemo/S0014_PullToRefreshRentals) <br> 折叠TabBar动画 | <img src="https://d13yacurqjgara.cloudfront.net/users/125056/screenshots/1650317/realestate-pull_1-2-3.gif" height=267 /> |
 | S0015 <br> [RQShineLabel](Example/CRAnimation/Demo/WidgetDemo/S0015_RQShineLabel) <br> 文字过渡动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0015_RQShineLabel_20170424.gif" height=267 /> |
 | S0016 <br> [NVActivityIndicatorView](Example/CRAnimation/Demo/WidgetDemo/S0016_NVActivityIndicatorView) <br> 各种实用的加载指示器 | <img src="http://omk22jt2z.bkt.clouddn.com/S0016_NVActivityIndicatorView_20170425.gif" height=267 /> |
+| S0017 <br> [LTMorphingLabel](Example/CRAnimation/Demo/WidgetDemo/S0017_LTMorphingLabel) <br> 炫酷的文字切换效果 | <img src="http://omk22jt2z.bkt.clouddn.com/S0017_LTMoriphingLabel_20170503.gif" height=267 /> |
+| S0018 <br> [CRRefresh](Example/CRAnimation/Demo/WidgetDemo/S0018_CRRefresh) <br> 炫酷的上拉刷新动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0018_CRRefresh.gif" height=267 /> |
 
 <!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://omk22jt2z.bkt.clouddn.com/S0016_NVActivityIndicatorView_20170425.gif" width=150 /> |-->
 
@@ -89,6 +93,7 @@ $ pod install
 <br>
 <br>
 <br>
+
 
 
 
