@@ -19,7 +19,7 @@ CR\_AppleStore:<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4
 <!--### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
  <img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>-->
 
-# 由于App的接口服务器出现异常，现在正在处理中。请大家耐心等待^_^
+# CRAnimation项目不限期停止。感谢各位小伙伴的一路陪伴。App已经下架，不过动效群会一直保留
 
 ---
 ### 项目简介
